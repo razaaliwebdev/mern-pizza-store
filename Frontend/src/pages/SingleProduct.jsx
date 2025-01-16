@@ -4,12 +4,11 @@ import { useParams, useNavigate  } from "react-router-dom";
 const SingleProduct = () => {
   const [products, setProducts] = useState([]);
   const params = useParams();
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
 
   const goBack = () => {
     navigate(-1); // Navigate to the previous page
   };
-  //   console.log(params);
 
   useEffect(() => {
     const getData = async () => {
@@ -20,7 +19,7 @@ const SingleProduct = () => {
       console.log(data);
     };
     getData();
-  }, []);
+  }, [params._id]);
 
   return (
     <>
