@@ -1,0 +1,19 @@
+{
+  "name": "getproducts",
+  "version": "1.0.0",
+  "description": "Get all the pizza products api , basic level",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js",
+    "dev": "nodemon sever.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
